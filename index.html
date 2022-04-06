@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>Animaciones CSS</title>
+
+    <!-- ------Iconos Fontawesome --------->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- -----------Estilos CSS ----------->
+    <link rel="stylesheet" href="./css/frame-work-jorge.css">
+    <link rel="stylesheet" href="./css/animaciones.css">
+</head>
+
+<body>
+    <h1 class="display-3 text-center" id="seccion-1">Animaciones CSS</h1>
+    <div class="container-90 grid col-3 med-col-2 peq-col-1">
+        <article class="card">
+            <h2>1. Sacudir</h2>
+            <div class="emoji sacudir">🍺</div>
+        </article>
+        <article class="card">
+            <h2>2. Fade-in</h2>
+            <div class="emoji fade-in">🕺</div>
+        </article>
+        <article class="card">
+            <h2>3. Fade-out</h2>
+            <div class="emoji fade-out">💃</div>
+        </article>
+        <article class="card">
+            <h2>4. Pulsaciones</h2>
+            <div class="emoji pulsaciones">❤️</div>
+        </article>
+        <article class="card">
+            <h2>5. Corazón Css</h2>
+            <div class="emoji corazon"></div>
+        </article>
+        </article>
+        <article class="card">
+            <h2>6. Loader</h2>
+            <div class="emoji loader"></div>
+        </article>
+        <article class="card botones  span-3 med-span-2 peq-span-1">
+            <h2>7. Botones animados</h2>
+            <div class="grid col-3 med-col-2 peq-col-1">
+                <button class="boton boton--anim boton--anim-right">Animación derecha</button>
+                <button class="boton boton--anim boton--anim-center">Animación center</button>
+                <button class="boton boton--anim boton--anim-left">Animación izquierda</button>
+                <button class="boton boton-gradient">Animación grad</button>
+            </div>
+        </article>
+        <article class="card span-3 med-span-2 peq-span-1">
+            <h2>8. Menú de pestañas</h2>
+            <nav class="tabs-nav">
+                <input type="radio" name="tabs" id="tab-1">
+                <label for="tab-1">Sección 1</label>
+                <input type="radio" name="tabs" id="tab-2">
+                <label for="tab-2">Sección 2</label>
+                <input type="radio" name="tabs" id="tab-3">
+                <label for="tab-3">Sección 3</label>
+                <input type="radio" name="tabs" id="tab-4">
+                <label for="tab-4">Sección 4</label>
+                <div class="tab-nav__hover"></div>
+            </nav>
+        </article>
+        <article class="card span-3 med-span-2 peq-span-1">
+            <h2>9. Menú Off Canvas</h2>
+            <input type="checkbox" class="off-canvas-btn">
+            <label class="off-canvas-burguer"></label>
+            <nav class="off-canvas-nav">
+                <div class="off-canvas-nav__container">
+                    <a href="#seccion-1" class="off-canvas__link">Sección 1</a>
+                    <a href="#" class="off-canvas__link">Sección 2</a>
+                    <a href="#" class="off-canvas__link">Sección 3</a>
+                    <a href="#" class="off-canvas__link">Sección 4</a>
+                    <a href="#seccion-5" class="off-canvas__link">Sección 5</a>
+                </div>
+            </nav>
+        </article>
+        <article class="card span-3 med-span-2 peq-span-1">
+            <h2>10. Ventana Modal</h2>
+            <a href="#modal-1">Abrir modal</a>
+            <div class="modal" id="modal-1">
+                <div class="modal-container">
+                    <a href="#cerrar" class="modal-close">X</a>
+                    <h2>Esto es una ventana modal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugit, non atque sunt enim
+                        facere sint omnis ea, cum aspernatur consequatur a corporis saepe neque. Nostrum iusto illum
+                        quis ad?</p>
+                    <ul>
+                        <li><a href="#">Enlace 1</a></li>
+                        <li><a href="#">Enlace 2</a></li>
+                        <li><a href="#">Enlace 3</a></li>
+                        <li><a href="#">Enlace 4</a></li>
+                        <li><a href="#">Enlace 5</a></li>
+                        <li><a href="#">Enlace 6</a></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <section class="section">
+        <h1 class="display-3 text-center">Animaciones Lottiefiles</h1>
+        <div class="container-90 grid col-3 med-col-2 peq-col-1">
+            <article class="card">
+                <lottie-player class="spinner" src="https://assets1.lottiefiles.com/packages/lf20_0sqygfw1.json"
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+            </article>
+            <article class="card">
+                <lottie-player class="moto" src="https://assets9.lottiefiles.com/private_files/lf30_fmvnknvp.json"
+                    background="transparent" speed=".3" loop autoplay>
+                </lottie-player>
+            </article>
+            <article class="card">
+                <lottie-player class="cabilando" src="https://assets2.lottiefiles.com/packages/lf20_vaamkasy.json"
+                     background="transparent" speed=".3" loop autoplay>
+               </lottie-player>
+            </article>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>
