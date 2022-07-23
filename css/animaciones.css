@@ -252,78 +252,6 @@
     background-position: 100% 0;
 }
 
-/** 8.MENÚ DE PESTAÑAS */
-.tabs-nav>input {
-    display: none;
-}
-
-.tabs-nav {
-    overflow: hidden;
-    width: 460px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    background-color: hsl(var(--h-primary), var(--s-primary), 50%);
-    color: var(--clr-white);
-    border-radius: 5em;
-}
-
-.tabs-nav>label {
-    position: relative;
-    z-index: 1;
-    width: calc(100% / 4);
-    text-align: center;
-    cursor: pointer;
-    transition: color 0.2s ease-in-out, background-color 0.3s ease-in-out;
-    border-radius: 1rem;
-    padding-block: .2em;
-    font-weight: bold;
-}
-
-.tabs-nav>label:first-of-type {
-    color: hsl(var(--h-secondary), var(--s-secondary), 60%);
-}
-
-.tabs-nav>label:hover {
-    background-color: rgba(255, 255, 255);
-    color: hsl(var(--h-primary), var(--s-primary), 50%);
-}
-
-
-.tabs-nav>input:checked+label {
-    color: hsl(var(--h-primary), var(--s-primary), 50%);
-}
-
-.tab-nav__hover {
-    position: absolute;
-    width: calc(100% / 4 - 0.5rem);
-    height: 2rem;
-    background-color: rgba(255, 255, 255);
-    color: hsl(var(--h-primary), var(--s-primary), 50%);
-    border-radius: 1rem;
-    transition: transform 0.2s ease-in-out;
-}
-
-#tab-1:checked~.tab-nav__hover {
-    transform: translateX(0%);
-}
-
-#tab-2:checked~.tab-nav__hover {
-    transform: translateX(100%);
-}
-
-#tab-3:checked~.tab-nav__hover {
-    transform: translateX(200%);
-}
-
-#tab-4:checked~.tab-nav__hover {
-    transform: translateX(300%);
-}
-
 /** 9.MENÚ OFF CANVAS */
 /*Todo hamburguer*/
 .menu-movil-btn {
@@ -445,8 +373,8 @@
 
 .modal-close {
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: .5rem;
+    right: .5rem;
     text-decoration: none;
     width: 3rem;
     height: 3rem;
@@ -456,12 +384,11 @@
     background-color: hsl(0, 0%, 0%, 0.6);
     color: var(--clr-white);
     border-radius: 50%;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .modal-close:hover {
     background-color: hsl(0, 0%, 0%, 1);
-    transform: scale(1.1);
 }
 
 .modal:target {
