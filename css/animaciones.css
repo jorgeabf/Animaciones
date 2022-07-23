@@ -258,7 +258,8 @@
 }
 
 .tabs-nav {
-    max-width: 100%;
+    overflow: hidden;
+    max-width: 420px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
