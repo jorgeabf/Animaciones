@@ -316,7 +316,7 @@
 
 /** 9.MENÚ OFF CANVAS */
 /*Todo hamburguer*/
-.off-canvas-btn {
+.menu-movil-btn {
     position: fixed;
     bottom: 1rem;
     left: 1rem;
@@ -327,7 +327,7 @@
     opacity: 0;
 }
 
-.off-canvas-burguer {
+.menu-movil-burguer {
     position: fixed;
     bottom: 1rem;
     left: 1rem;
@@ -341,8 +341,8 @@
     transition: 0.5s ease;
 }
 
-.off-canvas-burguer::after,
-.off-canvas-burguer::before {
+.menu-movil-burguer::after,
+.menu-movil-burguer::before {
     content: "";
     position: absolute;
     left: 0;
@@ -353,28 +353,28 @@
     transition: transform 0.3s ease;
 }
 
-.off-canvas-burguer::before {
+.menu-movil-burguer::before {
     transform: rotate(0) translate(0, -0.9rem);
 }
 
-.off-canvas-burguer::after {
+.menu-movil-burguer::after {
     transform: rotate(0) translate(0, 0.9rem);
 }
 
-.off-canvas-btn:checked+.off-canvas-burguer {
+.menu-movil-btn:checked+.menu-movil-burguer {
     background-color: transparent;
 }
 
-.off-canvas-btn:checked+.off-canvas-burguer::before {
+.menu-movil-btn:checked+.menu-movil-burguer::before {
     transform: rotate(45deg);
 }
 
-.off-canvas-btn:checked+.off-canvas-burguer::after {
+.menu-movil-btn:checked+.menu-movil-burguer::after {
     transform: rotate(-45deg);
 }
 
 /*Todo Menú*/
-.off-canvas-nav {
+.menu-movil-nav {
     position: fixed;
     inset: 0;
     z-index: 197;
@@ -382,11 +382,11 @@
     transition: all 0.35s ease-in-out;
 }
 
-.off-canvas-btn:checked~.off-canvas-nav {
-    clip-path: circle(200vw at bottom left);
+.menu-movil-btn:checked~.menu-movil-nav {
+    clip-path: circle(300% at bottom left);
 }
 
-.off-canvas-nav__container {
+.menu-movil-nav__container {
     width: 100%;
     height: 100vh;
     padding: 0 2em;
@@ -396,7 +396,7 @@
     background-color: hsla(0, 0%, 0%, 0.9);
 }
 
-.off-canvas__link {
+.menu-movil__link {
     padding: 0.5em;
     text-decoration: none;
     font-size: 1.5rem;
@@ -405,7 +405,7 @@
     transition: background-color 0.3s ease;
 }
 
-.off-canvas__link:hover {
+.menu-movil__link:hover {
     background-color: hsla(0, 0%, 0%, 0.925);
 }
 
