@@ -393,12 +393,12 @@
 }
 
 .menu-movil-btn:checked~.menu-movil-nav {
-    clip-path: circle(300% at bottom left);
+    clip-path: circle(300vh at bottom left);
 }
 
 .menu-movil-nav__container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 2em;
     display: flex;
     justify-content: center;
