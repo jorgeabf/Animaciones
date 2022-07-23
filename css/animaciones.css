@@ -213,7 +213,7 @@
     bottom: 0;
     height: 0.3em;
     width: 0;
-    background-color: #fff;
+    background-color: hsl(0, 0%, 100%);
     transition: all 0.4s ease;
 }
 
@@ -258,44 +258,54 @@
 }
 
 .tabs-nav {
-    max-width: 700px;
+    width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 1rem;
-    background-color: hsl(var(--h-primary), var(--s-primary), 30%);
+    padding: 1em;
+    background-color: hsl(var(--h-primary), var(--s-primary), 50%);
     color: var(--clr-white);
-    border-radius: 2rem;
+    border-radius: 5em;
 }
 
 .tabs-nav>label {
     position: relative;
     z-index: 1;
-    width: calc(100% / 4 - 0.5rem);
+    width: calc(100% / 4);
     text-align: center;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 1rem;
+    padding-block: .2em;
+    font-weight: bold;
 }
 
-.tabs-nav>label:hover {
+.tabs-nav>label:first-of-type {
     color: hsl(var(--h-secondary), var(--s-secondary), 60%);
 }
 
+.tabs-nav>label:hover {
+    background-color: rgba(255, 255, 255);
+    color: hsl(var(--h-primary), var(--s-primary), 50%);
+}
+
+
 .tabs-nav>input:checked+label {
-    color: hsl(var(--h-primary), var(--s-primary), 30%);
+    color: hsl(var(--h-primary), var(--s-primary), 50%);
 }
 
 .tab-nav__hover {
     position: absolute;
     width: calc(100% / 4 - 0.5rem);
     height: 2rem;
-    background-color: var(--clr-white);
-    color: hsl(var(--h-primary), var(--s-primary), 30%);
+    background-color: rgba(255, 255, 255);
+    color: hsl(var(--h-primary), var(--s-primary), 50%);
     border-radius: 1rem;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 #tab-1:checked~.tab-nav__hover {
