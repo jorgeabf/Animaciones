@@ -19,7 +19,7 @@
 <body>
     <h1 class="display-3 text-center" id="seccion-1">Animaciones CSS</h1>
     <div class="container-90 grid col-3 med-col-2 peq-col-1">
-        <article class="card">
+        <article class="card" id="seccion-1">
             <h2>1. Sacudir</h2>
             <div class="emoji sacudir">🍺</div>
         </article>
@@ -44,7 +44,7 @@
             <h2>6. Loader</h2>
             <div class="emoji loader"></div>
         </article>
-        <article class="card botones  span-3 med-span-2 peq-span-1">
+        <article class="card botones  span-3 med-span-2 peq-span-1" id="seccion-2">
             <h2>7. Botones animados</h2>
             <div class="grid col-3 med-col-2 peq-col-1">
                 <button class="boton boton--anim boton--anim-right">Animación derecha</button>
@@ -53,7 +53,7 @@
                 <button class="boton boton-gradient">Animación grad</button>
             </div>
         </article>
-        <article class="card span-3 med-span-2 peq-span-1">
+        <article class="card span-3 med-span-2 peq-span-1" id="seccion-3">
             <h2>8. Menú de pestañas</h2>
             <nav class="tabs-nav">
                 <input type="radio" name="tabs" id="tab-1">
@@ -67,21 +67,21 @@
                 <div class="tab-nav__hover"></div>
             </nav>
         </article>
-        <article class="card span-3 med-span-2 peq-span-1">
+        <article class="card span-3 med-span-2 peq-span-1" id="seccion-4">
             <h2>9. Menú Off Canvas</h2>
             <input type="checkbox" class="off-canvas-btn">
             <label class="off-canvas-burguer"></label>
             <nav class="off-canvas-nav">
                 <div class="off-canvas-nav__container">
                     <a href="#seccion-1" class="off-canvas__link">Sección 1</a>
-                    <a href="#" class="off-canvas__link">Sección 2</a>
-                    <a href="#" class="off-canvas__link">Sección 3</a>
-                    <a href="#" class="off-canvas__link">Sección 4</a>
+                    <a href="#seccion-2" class="off-canvas__link">Sección 2</a>
+                    <a href="#seccion-3" class="off-canvas__link">Sección 3</a>
+                    <a href="#seccion-4" class="off-canvas__link">Sección 4</a>
                     <a href="#seccion-5" class="off-canvas__link">Sección 5</a>
                 </div>
             </nav>
         </article>
-        <article class="card span-3 med-span-2 peq-span-1">
+        <article class="card span-3 med-span-2 peq-span-1" id="seccion-5">
             <h2>10. Ventana Modal</h2>
             <a href="#modal-1">Abrir modal</a>
             <div class="modal" id="modal-1">
@@ -119,8 +119,8 @@
             </article>
             <article class="card">
                 <lottie-player class="cabilando" src="https://assets2.lottiefiles.com/packages/lf20_vaamkasy.json"
-                     background="transparent" speed=".3" loop autoplay>
-               </lottie-player>
+                    background="transparent" speed=".3" loop autoplay>
+                </lottie-player>
             </article>
         </div>
     </section>
